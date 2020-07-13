@@ -5,8 +5,6 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
     $request = str_replace("/portfolio", "",$request);    
     define("BASE_PATH", 'http://localhost:8080/portfolio/');
 }else{
-    
-
     define("BASE_PATH", 'https://www.hector.tech/'); 
 }
 
@@ -16,6 +14,15 @@ include "layout/header.php";
 
 ?>
 <body class="<?php echo str_replace("/","",$request);?> " >
+
+<?php if($request !== '/work/') {?>
+    <span class="toronto">
+        <?php echo file_get_contents('assets/svg/toronto.svg');?> 
+</span>
+<?php } ?>
+
+
+   
 
 <?php include "layout/nav.php";
  ?>

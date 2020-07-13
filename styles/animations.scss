@@ -12,6 +12,53 @@
     100% { transform: translateY(0); }
  }
  
+ 
+ 
+ @-webkit-keyframes svgchangeColor {  
+	from {
+		fill: $base;
+	  }
+	  to {
+		fill: $lightergray;
+	  }
+ }
+ 
+ @keyframes svgchangeColor {
+	from {
+		fill: $base;
+	}
+	to {
+		fill: $lightergray;
+	}
+	
+  }
+ 
+  
+  
+  @-webkit-keyframes svgMoveSun {  
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+ }
+ 
+ @keyframes svgMoveSun {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	
+  }
+  
+ 
 
 
 @-webkit-keyframes blurFadeInOut {

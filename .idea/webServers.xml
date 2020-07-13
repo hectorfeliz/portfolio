@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7e6c3649-dfac-4cbd-aa91-09e9da0426a8" name="HECTOR.TECH" url="https://hector.tech">
+        <fileTransfer host="173.236.176.109" port="22" rootFolder="/home/dh_942dgi" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

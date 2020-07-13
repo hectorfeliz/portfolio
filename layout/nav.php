@@ -9,18 +9,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item">
+                <li class="nav-item <?php if($request ==  '/about/') echo ' active'?>">
                     <a href="<?php echo BASE_PATH;?>about/">
                     <i class="fas fa-address-card"></i>
                     <span>About</span></a>
                 </li>
-                <li class="nav-item">
+                
+                <li class="nav-item <?php if($request ==  '/work/') echo ' active'?>">
                     <a  href="<?php echo BASE_PATH;?>work/">
                     <i class="fas fa-briefcase"></i><span>Work</span></a>
                 </li>
        
                 <li class="nav-item">
-                    <a  href="mailto:hector@hectorfeliz.com?subject=Let's Talk&body=Hello Hector" target="_blank">
+                    <a  href="mailto:hector@hector.tech?subject=Let's Talk&body=Hello Hector" target="_blank">
                     <i class="fas fa-envelope-open-text"></i> <span>Contact</span></a>
                 </li>
                 <li class="nav-item">

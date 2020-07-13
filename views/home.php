@@ -3,8 +3,13 @@
 
 <div class="into-text  ">
     <h1 class="intro hover-bounce">
-    <small>Welcome </small></br>I'm Hector Feliz Recio</h1>
-    <h2>Web Developer living in Toronto</h2>
+      Hector Feliz Recio </h1>
+    <h2> Web Development, <span>eCommerce</span> & <span>WordPress</span></h2>
+    
+    <h3>
+    Toronto
+    </h3>
+    
 </div>
 
 <div class=" folders-container">
@@ -78,7 +83,7 @@ $skills = [
     
     <?php } ?>
     
-    <a class="folder resume" href="https://drive.google.com/file/d/1z0S_PeNNRklhV6NMyA973yPsuRKVL3Vz/view" target="_blank">
+    <a class="folder resume" href="https://drive.google.com/file/d/15MMPs4tmDB11FMzJQODtc_VFmd8-WVcX/view?usp=sharing" target="_blank">
         <span class="resume-icon"></span>
         <span class="title">
         Resume

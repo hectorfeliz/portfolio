@@ -5,10 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Toronto Front End Engineer / Web & eCommerce Developer. Versatile and creative developer with over 5 years of experience and extensive understanding of core web technologies, eCommerce, libraries, frameworks and tools as well as best practices for mobile and cross-browser compatibility, quality assurance, web performance, accessibility, search engine optimization (SEO), social media and analytics integrations.">
     <meta name="author" content="">
 
     <title>Hector Feliz Recio - Web & eCommerce Developer</title>
+  
     <?php
   
     ?>
@@ -16,17 +17,17 @@
     <link href="<?php echo BASE_PATH ;?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo BASE_PATH ;?>vendor/jquery/jquery.slim.min.js"></script>
-    <script src="<?php echo BASE_PATH ;?>vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php echo BASE_PATH ;?>vendor/jquery/jquery.blast.js"></script>
-
+    <script defer src="<?php echo BASE_PATH ;?>vendor/jquery/jquery.min.js"></script>
+    <script defer src="<?php echo BASE_PATH ;?>vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="<?php echo BASE_PATH ;?>vendor/jquery/jquery.blast.js"></script>
+    <script defer src="<?php echo BASE_PATH ;?>vendor/jquery/lightbox.js"></script>
+    
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Source+Sans+Pro:400|Ubuntu:700&display=swap" rel="stylesheet">
 
-
     <link href="<?php echo BASE_PATH ;?>styles/styles.css?v=<?php echo time();?>" rel="stylesheet">
-    <script src="<?php echo BASE_PATH ;?>script/app.js?v=<?php echo time();?>"></script>
+    <script defer src="<?php echo BASE_PATH ;?>script/app.js?v=<?php echo time();?>"></script>
     
     
     <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -32,6 +32,46 @@
   }
 }
 
+@-webkit-keyframes svgchangeColor {
+  from {
+    fill: #000;
+  }
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes svgchangeColor {
+  from {
+    fill: #000;
+  }
+  to {
+    fill: #fff;
+  }
+}
+
+@-webkit-keyframes svgMoveSun {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes svgMoveSun {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes blurFadeInOut {
   0% {
     opacity: 0;

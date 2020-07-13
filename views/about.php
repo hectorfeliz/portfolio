@@ -20,12 +20,52 @@
                 <img src="../assets/img/profile.png" class="profile" alt="Hector Feliz Graduation">
                 
                 </div>
+                
+                
+                <div class="tl-item">
+				<div class="tl-icon ">
+                <i class="fas fa-briefcase"></i>
+                </div>
+                <span class="timeframe">May 2020 - Present</span>
+                
+				<div class="tl-content">
+                    <h2>Wordpress Developer </h2>
+                    <h3>RBC Ventures (Arrive) <small>Toronto, ON</small></h3>
+					<p>
+                    Arrive provides the tools, resources and connections newcomers need to succeed in Canada.
+                    </p>
+                    <p>
+                    <ul class="checkmarks">
+                        <li>Sole web Developer for the Arrive Hub site primarily focused on the Wordpress platform.</li>
+                        <li>Developing new features for the site.</li>
+                        <li>Improving and enhancing existing functionality.</li>
+                        <li>Implementing new Integrations with the Arrive Hub.</li>
+                        <li>Performing constant Search Engine Optimization.</li>
+                    </ul>    
+                    </p>
+			
+				</div>
+			</div>
+                
+                
+                
+            <div class="tl-item resident">
+				<div class="tl-icon">
+                <i class="fab fa-canadian-maple-leaf"></i>
+                </div>
+                <span class="timeframe right">2020</span>
+				<div class="tl-content right">
+                    <h2>Moved to Toronto</h2>
+                    <h3>Became a Canadian Permanent Resident</h3>
+				</div>
+			</div>  
+                
 
 			<div class="tl-item">
 				<div class="tl-icon ">
                 <i class="fas fa-briefcase"></i>
                 </div>
-                <span class="timeframe">Feb 2017 - Present</span>
+                <span class="timeframe">Feb 2017 - May 2020</span>
                 
 				<div class="tl-content">
                     <h2>Web Developer </h2>

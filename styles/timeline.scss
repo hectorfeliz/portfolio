@@ -1,0 +1,304 @@
+#timeline {
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+    padding: 0 30px;
+    @include prefix(transition, all .4s ease);
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+
+    }
+
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+
+    }
+
+
+
+
+    &:before {
+      content: "";
+      width: 3px;
+      height: 100%;
+      background: $accent;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      position: absolute;
+    }
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+      width: 100%;
+    }
+
+    .tl-item {
+      margin-bottom: 0;
+      position: relative;
+      @extend %clearfix;
+      
+      
+
+      .tl-icon {
+        background: $accent;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        overflow: hidden;
+        margin-left: -23px;
+        z-index: 2;
+        @include prefix(border-radius, 50%);
+        @include prefix(transition, background .3s ease);
+
+        .fas, .fa, .fab {
+          @include prefix(transition, color .3s ease);
+          color: white;
+          position: relative;
+          top: 0;
+          left: 0;
+          font-size: 30px;
+          padding: 10px;
+          width: 100%;
+          text-align: center;
+        }
+
+      }
+
+      .timeframe {
+        background: $accent;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        overflow: hidden;
+        border-radius: 0px 5px 5px 0px;
+        color: white;
+        padding: 5px 8px;
+        line-height: 1;
+        @include prefix(transition, background .3s ease);
+        @include prefix(transition, color .3s ease);
+
+        &.right {
+          left: unset;
+          right: 50%;
+          border-radius: 5px 0px 0px 5px;
+        }
+
+      }
+
+
+      .tl-content {
+        width: 45%;
+        background: #fff;
+        padding: 20px;
+        @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
+        @include prefix(border-radius, 5px);
+        @include prefix(transition, all .3s ease);
+
+        h2 {
+          padding: 15px;
+          background: $accent;
+          color: #fff;
+          margin: -20px -20px 10px -20px;
+          font-size: 1.35rem;
+          @include prefix(transition, background .3s ease);
+          @include prefix(transition, color .3s ease);
+          @include prefix(border-radius, 3px 3px 0 0);
+        }
+
+        h3 {
+          color: $dark;
+          font-weight: normal;
+          font-size: 1rem;
+
+          small {
+            float: right;
+            font-style: italic;
+          }
+        }
+
+        ul {
+          margin: 0;
+          padding-left: 20px;
+        }
+
+        p,
+        li {
+          font-size: 14px;
+          color: $dark;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 45%;
+          top: 20px;
+          width: 0;
+          height: 0;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          border-left: 7px solid $accent;
+
+          @include prefix(transition, border-left .3s ease);
+        }
+
+        &.right {
+          float: right;
+
+          &:before {
+            content: '';
+            right: 45%;
+            left: inherit;
+            border-left: 0;
+            border-right: 7px solid $accent;
+          }
+
+
+        }
+      }
+
+      @media (min-width: 768px) {
+        &:hover {
+
+          .tl-icon {
+            background: $action;
+
+            i {
+              color: $dark;
+            }
+          }
+
+          .timeframe {
+            background: $action;
+            color: $dark;
+
+          }
+
+          .tl-content {
+            h2 {
+              background: $action;
+              color: $dark;
+            }
+
+            &:not(.right) {
+              &:before {
+
+                border-left: 7px solid $action;
+
+              }
+            }
+
+
+
+
+            &.right {
+              &:before {
+                border-right: 7px solid $action;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+      
+      
+      &.resident{
+        margin-bottom: 70px;
+        
+        .tl-icon{
+          background: white !important;
+          i{
+            color: #FF0000 !important;
+            padding: 5px;
+            font-size: 40px;
+          }
+        }
+        
+        .tl-content{
+          
+        }
+      }
+      
+      
+    }
+
+    .content {
+      &:hover {
+        .profile {
+          border: 5px solid $action;
+        }
+
+      }
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+        margin: 30px;
+        padding: 0px;
+        width: 90%;
+        
+        &:before {
+            left: 0;
+          }
+        
+      .tl-item {
+        margin-bottom: 80px;
+        width: 95%;
+
+        
+        .tl-icon{
+          left:0;
+        }
+        
+        .timeframe {
+          left: 0;
+          top: -40px;
+
+          &.right {
+            right: unset;
+          }
+        }
+
+        .tl-content {
+            
+            width: 90%;
+            float: right;
+  
+            &:before,
+            &.right:before {
+              left: 10%;
+              margin-left: -6px;
+              border-left: 0;
+              border-right: 7px solid $accent;
+            }
+            
+          h2 {
+            font-size: 1.2em;
+          }
+
+          h3 {
+            width: 100%;
+            font-size: 1em;
+            text-align: left;
+          
+            small {
+              width: 100%;
+
+            }
+          }
+        }
+      }
+    }
+
+
+  }

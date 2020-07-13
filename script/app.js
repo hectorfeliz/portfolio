@@ -2,32 +2,40 @@
  * Created by hectorfeliz on 2020-01-25.
  */
 
-const FileSystem = {
-    "Documents": {
-      
-    },
-    "Downloads": {
-      
-    },
-    "Photos": {
-      
-    }
-  }
- 
  
  $(document).ready(function(){
 
-    
     $(".hover-bounce").each(function(){
-        
-      
         $(this).blast({
             delimiter: "character",
             tag: "span"
         });
+    });
+    
+    
+    
+    if($('.portfolio-container').length){
+        
+        
+        $(".portfolio-container .piece").each(function(){
+            
+            $(this).find('.open-lightbox').simpleLightbox({
+                'sourceAttr': 'lightbox',
+                'captionSelector' : 'self'
+           
+            });
             
         
-    });
+            
+        });
+        
+        
+        
+        
+   
+    }
+    
+   
     
     
     if($('.folders-container').length){
